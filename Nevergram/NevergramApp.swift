@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct NevergramApp: App {
+struct NevergramStreamApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

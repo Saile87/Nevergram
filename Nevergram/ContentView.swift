@@ -7,20 +7,59 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            TopView()
+            
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house")
+                    }
+                Text("Search")
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                    }
+                Text("New")
+                    .tabItem {
+                        Image(systemName: "plus.square")
+                    }
+                Text("Reels")
+                    .tabItem {
+                        Image(systemName: "video.square")
+                    }
+                Text("Profil")
+                    .tabItem {
+                        Image(systemName: "person.circle")
+                    }
+            }
         }
-        .padding()
+    }
+}
+private struct TopView: View {
+    var body: some View {
+        HStack {
+            Text("Nevergram")
+                .font(.custom("AmericanTypewriter", size: CGFloat(30)))
+                .padding(.leading)
+            Image(systemName: "chevron.down")
+                .font(.footnote)
+            Spacer()
+            Image(systemName: "heart")
+                .font(.title2)
+            Image(systemName: "paperplane")
+                .font(.title2)
+                .padding(.horizontal)
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
+

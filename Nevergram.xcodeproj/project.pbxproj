@@ -14,6 +14,8 @@
 		5630104E2A5988B10087D4E3 /* NevergramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630104D2A5988B10087D4E3 /* NevergramTests.swift */; };
 		563010582A5988B10087D4E3 /* NevergramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563010572A5988B10087D4E3 /* NevergramUITests.swift */; };
 		5630105A2A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563010592A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift */; };
+		564ACB492A5AEDED0026FA8A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564ACB482A5AEDED0026FA8A /* HomeView.swift */; };
+		564ACB4B2A5AF34F0026FA8A /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		563010532A5988B10087D4E3 /* NevergramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevergramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563010572A5988B10087D4E3 /* NevergramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevergramUITests.swift; sourceTree = "<group>"; };
 		563010592A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevergramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		564ACB482A5AEDED0026FA8A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				5630103E2A5988AF0087D4E3 /* ContentView.swift */,
 				563010402A5988B10087D4E3 /* Assets.xcassets */,
 				563010422A5988B10087D4E3 /* Preview Content */,
+				564ACB482A5AEDED0026FA8A /* HomeView.swift */,
+				564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */,
 			);
 			path = Nevergram;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564ACB492A5AEDED0026FA8A /* HomeView.swift in Sources */,
+				564ACB4B2A5AF34F0026FA8A /* StoryModel.swift in Sources */,
 				5630103F2A5988AF0087D4E3 /* ContentView.swift in Sources */,
 				5630103D2A5988AF0087D4E3 /* NevergramApp.swift in Sources */,
 			);
