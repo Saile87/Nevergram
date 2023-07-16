@@ -11,11 +11,10 @@
 		5630103F2A5988AF0087D4E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630103E2A5988AF0087D4E3 /* ContentView.swift */; };
 		563010412A5988B10087D4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563010402A5988B10087D4E3 /* Assets.xcassets */; };
 		563010442A5988B10087D4E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563010432A5988B10087D4E3 /* Preview Assets.xcassets */; };
-		5630104E2A5988B10087D4E3 /* NevergramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630104D2A5988B10087D4E3 /* NevergramTests.swift */; };
-		563010582A5988B10087D4E3 /* NevergramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563010572A5988B10087D4E3 /* NevergramUITests.swift */; };
-		5630105A2A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563010592A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift */; };
-		564ACB492A5AEDED0026FA8A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564ACB482A5AEDED0026FA8A /* HomeView.swift */; };
 		564ACB4B2A5AF34F0026FA8A /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */; };
+		567CA3112A5C57F0009CC5B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA3102A5C57F0009CC5B2 /* HomeView.swift */; };
+		567CA3132A5F23A7009CC5B2 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA3122A5F23A7009CC5B2 /* PostView.swift */; };
+		567CA3152A5F246E009CC5B2 /* PostModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA3142A5F246E009CC5B2 /* PostModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +41,11 @@
 		563010402A5988B10087D4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563010432A5988B10087D4E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		563010492A5988B10087D4E3 /* NevergramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevergramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5630104D2A5988B10087D4E3 /* NevergramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevergramTests.swift; sourceTree = "<group>"; };
 		563010532A5988B10087D4E3 /* NevergramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevergramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		563010572A5988B10087D4E3 /* NevergramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevergramUITests.swift; sourceTree = "<group>"; };
-		563010592A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevergramUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		564ACB482A5AEDED0026FA8A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		567CA3102A5C57F0009CC5B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		567CA3122A5F23A7009CC5B2 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		567CA3142A5F246E009CC5B2 /* PostModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				5630103B2A5988AF0087D4E3 /* Nevergram */,
-				5630104C2A5988B10087D4E3 /* NevergramTests */,
-				563010562A5988B10087D4E3 /* NevergramUITests */,
 				5630103A2A5988AF0087D4E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,10 +96,12 @@
 			children = (
 				5630103C2A5988AF0087D4E3 /* NevergramApp.swift */,
 				5630103E2A5988AF0087D4E3 /* ContentView.swift */,
+				567CA3102A5C57F0009CC5B2 /* HomeView.swift */,
+				564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */,
+				567CA3122A5F23A7009CC5B2 /* PostView.swift */,
+				567CA3142A5F246E009CC5B2 /* PostModels.swift */,
 				563010402A5988B10087D4E3 /* Assets.xcassets */,
 				563010422A5988B10087D4E3 /* Preview Content */,
-				564ACB482A5AEDED0026FA8A /* HomeView.swift */,
-				564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */,
 			);
 			path = Nevergram;
 			sourceTree = "<group>";
@@ -114,23 +112,6 @@
 				563010432A5988B10087D4E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		5630104C2A5988B10087D4E3 /* NevergramTests */ = {
-			isa = PBXGroup;
-			children = (
-				5630104D2A5988B10087D4E3 /* NevergramTests.swift */,
-			);
-			path = NevergramTests;
-			sourceTree = "<group>";
-		};
-		563010562A5988B10087D4E3 /* NevergramUITests */ = {
-			isa = PBXGroup;
-			children = (
-				563010572A5988B10087D4E3 /* NevergramUITests.swift */,
-				563010592A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift */,
-			);
-			path = NevergramUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				564ACB492A5AEDED0026FA8A /* HomeView.swift in Sources */,
 				564ACB4B2A5AF34F0026FA8A /* StoryModel.swift in Sources */,
+				567CA3152A5F246E009CC5B2 /* PostModels.swift in Sources */,
+				567CA3112A5C57F0009CC5B2 /* HomeView.swift in Sources */,
 				5630103F2A5988AF0087D4E3 /* ContentView.swift in Sources */,
+				567CA3132A5F23A7009CC5B2 /* PostView.swift in Sources */,
 				5630103D2A5988AF0087D4E3 /* NevergramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5630104E2A5988B10087D4E3 /* NevergramTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5630105A2A5988B10087D4E3 /* NevergramUITestsLaunchTests.swift in Sources */,
-				563010582A5988B10087D4E3 /* NevergramUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

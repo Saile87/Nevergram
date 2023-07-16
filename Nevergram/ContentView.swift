@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct ContentView: View {
     var body: some View {
         VStack {
-            
             TopView()
-            
             TabView {
                 HomeView()
                     .tabItem {
@@ -35,6 +33,7 @@ struct MainView: View {
                         Image(systemName: "person.circle")
                     }
             }
+            .tint(.black)
         }
     }
 }
@@ -57,9 +56,9 @@ private struct TopView: View {
 }
 
 
-struct MainView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ContentView()
     }
 }
 
