@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct NevergramStreamApp: App {
+    
+    @StateObject private var appState = AppState()
+    @StateObject private var loginViewModel = LoginViewModel(loginHandler: LoginHandlerMock())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if appState.isLoggedID {
+                    ContentView()
+                } else {
+                    LoginView(loginViewModel: loginViewModel)
+                }
+            }
+                .environmentObject(appState)
         }
     }
 }

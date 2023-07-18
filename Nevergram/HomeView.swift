@@ -13,7 +13,7 @@ struct HomeView: View {
     Post(user: "Fuchs", userImage: "Bruno", profilPicture: "fuchs", description: "Der süsseste Bär der Welt🐻", likes: 1234),
     Post(user: "Affe", userImage: "BrunoEl", profilPicture: "affe", description: "Brother Love 🩵💙♥️", likes: 5555),
     Post(user: "Bär", userImage: "Fam", profilPicture: "bar", description: "Nice Day!!! 🩵💙♥️", likes: 9090),
-    Post(user: "Drache", userImage: "Kim", profilPicture: "drache", description: "Hot-Mode!!! 🩵💙♥️", likes: 999999),
+    Post(user: "Drache", userImage: "Kim", profilPicture: "drache", description: "Model!!! 🩵💙♥️", likes: 999999),
     Post(user: "Löwe", userImage: "Samila", profilPicture: "lion", description: "Geschwisterliebe!! 🩵💙♥️", likes: 4567)
     ]
     

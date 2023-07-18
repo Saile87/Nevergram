@@ -37,6 +37,7 @@ struct ContentView: View {
         }
     }
 }
+
 private struct TopView: View {
     var body: some View {
         HStack {

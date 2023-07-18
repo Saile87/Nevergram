@@ -12,9 +12,15 @@
 		563010412A5988B10087D4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563010402A5988B10087D4E3 /* Assets.xcassets */; };
 		563010442A5988B10087D4E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563010432A5988B10087D4E3 /* Preview Assets.xcassets */; };
 		564ACB4B2A5AF34F0026FA8A /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */; };
+		5675881B2A6589BE00C2E766 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675881A2A6589BE00C2E766 /* LoginView.swift */; };
+		5675881D2A65937700C2E766 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675881C2A65937700C2E766 /* ViewExtension.swift */; };
+		5675881F2A65D0A500C2E766 /* SecureInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675881E2A65D0A500C2E766 /* SecureInputField.swift */; };
+		567588212A65D7DA00C2E766 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567588202A65D7DA00C2E766 /* AppState.swift */; };
 		567CA3112A5C57F0009CC5B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA3102A5C57F0009CC5B2 /* HomeView.swift */; };
 		567CA3132A5F23A7009CC5B2 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA3122A5F23A7009CC5B2 /* PostView.swift */; };
 		567CA3152A5F246E009CC5B2 /* PostModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA3142A5F246E009CC5B2 /* PostModels.swift */; };
+		56D3DCD12A6732320027B08F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3DCD02A6732320027B08F /* LoginViewModel.swift */; };
+		56D3DCD32A67329D0027B08F /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3DCD22A67329D0027B08F /* LoginHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +49,15 @@
 		563010492A5988B10087D4E3 /* NevergramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevergramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563010532A5988B10087D4E3 /* NevergramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NevergramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		5675881A2A6589BE00C2E766 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5675881C2A65937700C2E766 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		5675881E2A65D0A500C2E766 /* SecureInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputField.swift; sourceTree = "<group>"; };
+		567588202A65D7DA00C2E766 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		567CA3102A5C57F0009CC5B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		567CA3122A5F23A7009CC5B2 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		567CA3142A5F246E009CC5B2 /* PostModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModels.swift; sourceTree = "<group>"; };
+		56D3DCD02A6732320027B08F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		56D3DCD22A67329D0027B08F /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +107,13 @@
 			isa = PBXGroup;
 			children = (
 				5630103C2A5988AF0087D4E3 /* NevergramApp.swift */,
+				567588202A65D7DA00C2E766 /* AppState.swift */,
 				5630103E2A5988AF0087D4E3 /* ContentView.swift */,
+				5675881A2A6589BE00C2E766 /* LoginView.swift */,
+				5675881E2A65D0A500C2E766 /* SecureInputField.swift */,
+				5675881C2A65937700C2E766 /* ViewExtension.swift */,
+				56D3DCD02A6732320027B08F /* LoginViewModel.swift */,
+				56D3DCD22A67329D0027B08F /* LoginHandler.swift */,
 				567CA3102A5C57F0009CC5B2 /* HomeView.swift */,
 				564ACB4A2A5AF34F0026FA8A /* StoryModel.swift */,
 				567CA3122A5F23A7009CC5B2 /* PostView.swift */,
@@ -244,12 +262,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D3DCD32A67329D0027B08F /* LoginHandler.swift in Sources */,
 				564ACB4B2A5AF34F0026FA8A /* StoryModel.swift in Sources */,
+				567588212A65D7DA00C2E766 /* AppState.swift in Sources */,
+				56D3DCD12A6732320027B08F /* LoginViewModel.swift in Sources */,
 				567CA3152A5F246E009CC5B2 /* PostModels.swift in Sources */,
 				567CA3112A5C57F0009CC5B2 /* HomeView.swift in Sources */,
 				5630103F2A5988AF0087D4E3 /* ContentView.swift in Sources */,
+				5675881B2A6589BE00C2E766 /* LoginView.swift in Sources */,
 				567CA3132A5F23A7009CC5B2 /* PostView.swift in Sources */,
+				5675881D2A65937700C2E766 /* ViewExtension.swift in Sources */,
 				5630103D2A5988AF0087D4E3 /* NevergramApp.swift in Sources */,
+				5675881F2A65D0A500C2E766 /* SecureInputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nevergram/Preview Content\"";
@@ -413,6 +438,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,6 +446,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = E.B..Nevergram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -431,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nevergram/Preview Content\"";
@@ -442,6 +470,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +478,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = E.B..Nevergram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

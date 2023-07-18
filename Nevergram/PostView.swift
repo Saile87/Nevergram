@@ -115,7 +115,7 @@ private struct DescriptionView: View {
                 .bold()
             Text(" ")
             Text(post.description)
-                .padding(.leading)
+                .padding(.leading, 1)
             Spacer()
         }.font(.footnote)
     }
